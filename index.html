@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dentist Website</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+<!------------------MENU ---------------------->
+    <section class="blue">
+        <div class="blue-line">
+            <ul>
+            <li class="address">1234 Cedar Street, Suite 5B, Brooklyn, NY 11201</li>
+        <li><span class="icon-number">
+            <a class="call-us" href="#"> <i class="fa-solid fa-phone"></i><b>Call Us:</b></a>
+            <p class="number">(212) 555-1234</p>
+        </span>
+        </li>       
+        <li><span class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </span>
+        </li>
+        </ul>
+        </div>
+    </section>
+
+
+        <nav class="navbar">
+
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a class="clicks" href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a class="clicks" href="#">Home</a></li>
+                <li><a class="clicks" href="#">About</a></li>
+                <li><a class="clicks" href="#">Portfolio</a></li>
+                <li><a class="clicks" href="#">Services</a></li>
+                <li><a class="clicks" href="#">New Patients</a></li>
+                <li><a class="clicks" href="#">Contact Us</a></li>
+                <li><a class="btn btn-ham" href="#">Book Online</a> </li>
+            </ul>
+               <ul class="desktop">
+                    <li><img class="logo" src="images/favicon.png" alt="logo">
+                    </li>
+                    <li><a class="clicks" href="#">Home</a></li>
+                    <li><a class="clicks" href="#">About</a></li>
+                    <li><a class="clicks" href="#">Portfolio</a></li>
+                    <li><a class="clicks" href="#">Services</a></li>
+                    <li><a class="clicks" href="#">New Patients</a></li>
+                    <li><a class="clicks" href="#">Contact Us</a></li>
+                    <li><a class="btn btn-menu" href="#">Book Online</a> </li>
+                    <li onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
+                </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'   
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none' 
+            }
+        </script>
+
+
+
+<!------------------  HERO SECTION ---------------------->
+
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1 class="text-xxl">
+                Dentist in <br> 
+                <span class="blue-text">Brooklyn, NY</span>
+            </h1>
+            <p class="text-md">Welcome to Dr. Charles Dental</p>
+            <p class="text-sm">Dr. Charles Dental offers some of the most experienced family and cosmetic dentistry services in the region. Our practice has been proudly serving the Brooklyn community since 1995.</p>
+            <a class="btn btn-orange" href="#">Text (212) 555-5678 to Schedule an Appointment</a>
+        </div>
+    </div>
+</section>
+
+
+<!------------------  TESTIMONIALS  ---------------------->
+
+<section class="testimonials">
+    <div class="test-container">
+
+        <div class="results">
+            <ul>
+                <li><p class="test-number">10000+</p><p class="test-text">Smiles Transformed</p></li>
+                <li><p class="test-number">300</p><p class="test-text">5-star Reviews</p></li>
+                <li><p class="test-number">30+</p><p class="test-text">Years of dental experience in NY</p></li>
+            </ul>
+        </div>
+
+        <h2 class="top-header">What our clients share:</h2>
+
+        <div class="clients-grid">
+            <div class="grid-box">
+                <img src="images/ryan.png">
+                <p class="name">Ryan Sullivan</p>
+                <p class="review">"Super friendly staff and a dentist who really cares. Everything was explained clearly, and the whole process was smooth and painless. Definitely found my go-to dental office!"</p>
+            </div>
+
+            <div class="grid-box">
+                <img src="images/ethan.png">
+                <p class="name">Ethan Brooks</p>
+                <p class="review">"Been coming here for years, and it’s always a great experience. The team is friendly, professional, and always makes me feel comfortable. Highly recommend!"</p>
+            </div>
+
+            <div class="grid-box">
+                <img src="images/chloe.png">
+                <p class="name">Chloe Ramirez</p>
+                <p class="review">"Had a fantastic visit! The dentist was gentle, the staff was welcoming, and the office is clean and modern. Quick, easy, and I’m really happy with the results!"</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!------------------  GALLERY  ---------------------->
+
+<section class="gallery">
+    <div class="gallery-container">
+
+        <div class="gallery-img">
+            <img src="images/transformation.png">
+        </div>
+
+        <div class="gallery-text">
+            <ul>
+                <li><h3 class="text-xl">Smiles Gallery</h3></li>
+                <li><p class="text-sm">Transforming a smile can significantly boost confidence and enhance oral health. Explore these remarkable smile transformations in our before-and-after gallery!</p></li>
+                <li><a class="btn btn-dark" href="#">Check Out Our Smiles Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!------------------  SERVICES  ---------------------->
+
+<section class="services">
+
+    <h2 class="top-header">Explore our services:</h2>
+
+    <div class="services-container">
+
+        <div class="services-img">
+            <img src="images/smile.png">
+        </div>
+
+        <div class="services-text">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <h3 class="service-title">Dental Bonding</h3>
+                    <p class="text-sm">
+                        Dental bonding repairs minor cosmetic issues using a tooth-colored material, similar to composite fillings, that blends seamlessly with your natural teeth.
+                    </p>
+                </li>
+            
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <h3 class="service-title">Invisalign</h3>
+                    <p class="text-sm">
+                        Invisalign offers an effective way to straighten your teeth without the need for braces. Dr. Charles Dental specializes in Invisalign to help patients achieve a beautiful, aligned smile.
+                    </p>
+                </li>
+            
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <h3 class="service-title">Teeth Whitening</h3>
+                    <p class="text-sm">
+                        Brighten your smile with our professional teeth whitening services using KöR products to safely and effectively enhance the whiteness of your teeth.
+                    </p>
+                </li>
+            
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <h3 class="service-title">Veneers</h3>
+                    <p class="text-sm">
+                        Veneers provide a cosmetic solution to minor imperfections like chips, cracks, or discoloration. Contact Dr. Charles Dental to learn how veneers can revitalize your smile.
+                    </p>
+                </li>
+            
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <h3 class="service-title">Smile Makeovers</h3>
+                    <p class="text-sm">
+                        A complete smile makeover is a custom treatment plan designed to address your unique concerns, from teeth whitening to alignment and much more.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
+
+
+<!------------------  MISSION + FORM  ---------------------->
+
+<section class="end-container">
+    <div class="mission">
+        <h2 class="text-xl">Our Mission</h2>
+        <p>At Dr. Charles Dental, we are committed to providing high-quality dental care, blending both aesthetic and full-mouth rehabilitation services with a focus on overall wellness. Our distinctive approach lies in our thorough evaluation of each case, addressing the root causes of dental concerns to enhance long-term function and beauty. We offer expert referrals, advanced diagnostics, and personalized treatments to ensure lasting results.</p>
+        <p>Under the leadership of Dr. Charles, a skilled dentist trained in advanced comprehensive care, our dedicated team ensures each patient receives individualized attention and care. Known for his approachable manner and clear communication, Dr. Charles and his associates are trusted by our patients to deliver exceptional results. With a focus on aesthetic and comprehensive dentistry, we aim to leave every patient satisfied and proud to be part of our welcoming community.</p>           
+    </div>
+
+    <div class="form">
+
+        <div class="form-box">
+
+            <h3>Have Questions?<br>Let us answer them!</h3>
+
+            <form action="action_page.php" method="POST">
+
+                <div class="form-fields">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="fname" placeholder="Your Name" required>
+                </div>
+
+
+
+                <div class="form-fields">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                
+                <div class="form-fields">
+                    <label for="tel"></label>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-message">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" placeholder="Message" rows="5"></textarea>
+                </div>
+
+
+                <div class="form-btn">
+                    <input type="submit" class="btn" value="Book an Appointment">
+                </div>
+
+
+            </form>
+
+        </div>
+                
+        <div class="form-img">
+            <img src="images/form-pic.jpg">
+        </div>
+    </div>
+</section>
+
+<!------------------  FOOTER  ---------------------->
+
+<footer>
+    <div class="footer-grid">
+
+        <div class="logo-column">
+            <img src="images/footer-logo.png">
+            <ul>
+                <li class="border"><i class="fa-solid fa-location-dot"></i><p>102-10 66th Rd
+                    Ste 1D<br>
+                    Forest Hills Queens, NY<br> 11375</p>
+                </li>
+                <li class="border"><i class="fa-solid fa-phone"></i><p>(718) 275-9792 </p></li>
+                <li><i class="fa-solid fa-clock"></i><p>
+                    Mon - Friday 10 am - 7 pm<br>
+                    
+                    Saturday CLOSED<br>
+                    
+                    Sunday CLOSED</p> </li>
+                
+            </ul>
+        </div>
+
+        <div class="normal-column">
+
+            <h3>Top Services</h3>
+            <ul>
+                <li><a href="#">Dental Implants</a></li>
+                <li><a href="#">All-on-4 Implants</a></li>
+                <li><a href="#">Veneers</a></li>
+                <li><a href="#">Full Mouth Reconstruction</a></li>
+                <li><a href="#">Dental Bonding</a></li>
+                <li><a href="#">Cerec</a></li>
+                <li><a href="#">Invisalign</a></li>
+
+            </ul>
+        </div>
+
+        
+        <div class="normal-column">
+            <h3>About Us</h3>
+            <ul>
+                 <li><a href="#">Dr Gregory Mark</a></li>
+                <li><a href="#">Dr Daniel Shimunov</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">Dental Technology</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Facebook</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-column">
+            <h3>For Patients</h3>
+            <ul>
+                <li><a href="#" class="btn btn-transp">Make a Payment</a></li>
+                <li><a href="#" class="btn btn-lightbl">Book an Appointment</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
